@@ -1,0 +1,17 @@
+{
+    "name": "acquia/sitestudio_jsonapi",
+    "type": "drupal-module",
+    "description": "Site Studio JSON:API",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Acquia Engineering",
+            "homepage": "https://www.acquia.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/jsonapi_extras": "^3.24",
+        "acquia/cohesion": "^7.4"
+    }
+}
