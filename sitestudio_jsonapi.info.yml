@@ -1,0 +1,12 @@
+name: Site Studio JSON:API
+type: module
+description: 'Adds Site Studio support for JSON:API.'
+core_version_requirement: ^10 || ^11
+package: Site Studio
+dependencies:
+  - cohesion
+  - jsonapi
+  - jsonapi_extras
+  - sitestudio_data_transformers
+
+
