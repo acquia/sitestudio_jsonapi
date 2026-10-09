@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Uninstall hook to remove pre-configured resource config entity.
+ */
+
+use Drupal\Core\Config\Config;
+
+/**
+ * Implements hook_uninstall().
+ */
+function sitestudio_jsonapi_uninstall($is_syncing) {
+  // Delete Cohesion Layout resource override.
+  $config = \Drupal::configFactory()->getEditable('jsonapi_extras.jsonapi_resource_config.cohesion_layout--cohesion_layout');
+  if ($config instanceof Config) {
+    $config->delete();
+  }
+
+}
